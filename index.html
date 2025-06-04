@@ -6,10 +6,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>GitHub Friend Finder 🐱</h1>
+  <h1>GitHub Friend Finder 🐙🐱</h1>
 
   <div id="instructions">
     <p>Welcome! 🎉 Upload a JSON file containing GitHub user data, then select your state to find friends near you.</p>
+    <p>At a minimum, make sure your JSON file is structured like this:</p>
+    <pre>
+{
+  "users": [
+    {
+      "login": "username1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/123456?v=4",
+      "state": "California"
+    },
+    {
+      "login": "username2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/789012?v=4",
+      "state": "New York"
+    }
+  ]
+}
+    </pre>
+    <p>Make sure to include the <code>state</code> field for each user!</p>
+
+    <p>
+      If you need help retrieving your organization’s users, check out 
+      <a href="https://docs.github.com/en/rest/orgs/members?apiVersion=2022-11-28#list-organization-members" target="_blank">
+        GitHub's REST API documentation for listing organization members
+      </a>.
+    </p>
+
+    <p>Here's a sample <code>curl</code> command you can use to fetch members:</p>
+    <pre>
+curl -H "Authorization: token YOUR_GITHUB_TOKEN" \
+https://api.github.com/orgs/YOUR_ORG/members
+    </pre>
+
     <p><strong>Steps:</strong></p>
     <ol>
       <li>Click <strong>Choose File</strong> to upload your JSON file.</li>
@@ -23,7 +55,7 @@
 
   <select id="stateSelect">
     <option value="">Select your state...</option>
-    <!-- We'll fill this dynamically! -->
+    <!-- States will be filled dynamically -->
   </select>
   <br><br>
 
