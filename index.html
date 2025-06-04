@@ -6,11 +6,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>GitHub Friend Finder</h1>
+  <h1>GitHub Friend Finder 🐱</h1>
+
+  <div id="instructions">
+    <p>Welcome! 🎉 Upload a JSON file containing GitHub user data, then select your state to find friends near you.</p>
+    <p><strong>Steps:</strong></p>
+    <ol>
+      <li>Click <strong>Choose File</strong> to upload your JSON file.</li>
+      <li>Select your <strong>State</strong> from the dropdown menu.</li>
+      <li>Click <strong>Find Friends</strong> to see up to 5 GitHub users from your state — with random cat avatars for fun!</li>
+    </ol>
+  </div>
 
   <input type="file" id="fileInput" accept=".json" />
   <br><br>
-  <button onclick="findFriends()">Find Friends Near Me</button>
+
+  <select id="stateSelect">
+    <option value="">Select your state...</option>
+    <!-- We'll fill this dynamically! -->
+  </select>
+  <br><br>
+
+  <button onclick="findFriends()">Find Friends</button>
 
   <div id="friendResults"></div>
 
