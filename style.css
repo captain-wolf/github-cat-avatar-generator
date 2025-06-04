@@ -54,6 +54,21 @@ button:hover {
   text-align: left;
 }
 
+.profile-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.profile-info a {
+  color: #58a6ff; /* GitHub blue */
+  text-decoration: none;
+}
+
+.profile-info a:hover {
+  text-decoration: underline;
+}
+
+
 img {
   width: 250px;
   height: 250px;
