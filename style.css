@@ -1,23 +1,35 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0d1117; /* GitHub dark background */
-  color: #c9d1d9; /* GitHub light text color */
-  text-align: center;
-  padding: 2rem;
+  background-color: #ffffff; /* Light theme */
+  color: #24292f; /* GitHub dark text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
 #profile {
-  margin-top: 2rem;
-  background-color: #161b22; /* GitHub secondary background */
+  background-color: #f6f8fa; /* Card background */
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  display: inline-block;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(27, 31, 35, 0.1);
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.profile-info {
+  flex: 1;
+  text-align: left;
 }
 
 img {
-  max-width: 200px;
-  margin-top: 1rem;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #30363d; /* subtle border like GitHub avatars */
+  border: 3px solid #d0d7de;
 }
