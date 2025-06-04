@@ -92,3 +92,9 @@ img {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.icon {
+  vertical-align: middle;
+  margin-right: 8px;
+  fill: #8b949e; /* GitHub icon gray */
+}
