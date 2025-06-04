@@ -46,10 +46,13 @@ function findFriends() {
   resultsDiv.innerHTML = `<h2>Friends in ${myStateInput}</h2>` + 
     (topMatches.map(user => `
       <div class="friend-card">
-        <p><strong>${user.name}</strong> (${user.github_login})</p>
-        <p>Title: ${user.title}</p>
-        <p>State: ${user.state}</p>
-        <p><a href="https://github.com/${user.github_login}" target="_blank">View GitHub Profile</a></p>
+        <img class="cat-avatar" src="https://cataas.com/cat?width=250&height=250&${Math.random()}" alt="Cat Avatar">
+        <div class="friend-info">
+          <p><strong>${user.name}</strong> (${user.github_login})</p>
+          <p>Title: ${user.title}</p>
+          <p>State: ${user.state}</p>
+          <p><a href="https://github.com/${user.github_login}" target="_blank">View GitHub Profile</a></p>
+        </div>
       </div>
     `).join(''));
 

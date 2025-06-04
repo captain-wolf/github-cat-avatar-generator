@@ -106,12 +106,27 @@ img {
 .friend-card {
   background-color: #161b22;
   border: 1px solid #30363d;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: left;
-  max-width: 400px;
+  max-width: 500px;
   margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cat-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #30363d;
+}
+
+.friend-info {
+  flex: 1;
 }
 
 .friend-card a {
@@ -119,4 +134,6 @@ img {
   text-decoration: none;
 }
 
-
+.friend-card a:hover {
+  text-decoration: underline;
+}
