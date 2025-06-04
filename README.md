@@ -1,2 +1,2 @@
-# github-cat-avatar-generator
-Generate a quirky profile page using public GitHub usernames
+# Where is GitHub 
+Find local githubbers near you!
