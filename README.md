@@ -1,2 +1,2 @@
-# Where is GitHub 
+# Friend Finder (Demo)
 Find local githubbers near you!
