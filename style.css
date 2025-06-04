@@ -33,3 +33,19 @@ img {
   border-radius: 50%;
   border: 3px solid #d0d7de;
 }
+
+#spinner {
+  display: none;
+  margin: 2rem auto;
+  border: 6px solid #f3f3f3; /* Light gray */
+  border-top: 6px solid #24292f; /* GitHub dark */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
