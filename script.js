@@ -10,7 +10,12 @@ const states = [
   'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon',
   'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota',
   'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington',
-  'West Virginia', 'Wisconsin', 'Wyoming'
+  'West Virginia', 'Wisconsin', 'Wyoming',
+
+  // Canadian Provinces and Territories
+  'Alberta', 'British Columbia', 'Manitoba', 'New Brunswick',
+  'Newfoundland and Labrador', 'Nova Scotia', 'Ontario', 'Prince Edward Island',
+  'Quebec', 'Saskatchewan', 'Northwest Territories', 'Nunavut', 'Yukon'
 ];
 
 // Fill the dropdown on page load
